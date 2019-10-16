@@ -29,7 +29,9 @@ rm -rf "$DIR"
 mkdir "$DIR"
 
 EPUB="$DIR/losungen-$YEAR.epub"
-xsltproc los-md.xslt "$XML" | pandoc -f markdown -o "$EPUB"
+MD="$DIR/losungen-$YEAR.md"
+xsltproc los-md.xslt "$XML" > $MD
+pandoc -f markdown -o "$EPUB" copyright.md $MD
 
 echo "CREATED ebook $EPUB"
 ebook-viewer "$EPUB"
