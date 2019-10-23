@@ -1,4 +1,6 @@
-# Die Losungen
+% Die Losungen
+% Herrenhuter Brüdergemeinde
+% 2019
 
 © Evangelische Brüder-Unität – [Herrnhuter Brüdergemeine](http://www.herrnhuter.de)
 
