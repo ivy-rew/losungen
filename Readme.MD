@@ -11,4 +11,5 @@ Die Scripte können mit einem Debian basierten Betriebssystem (z.B. Ubuntu 18.04
 
 ## Copyright
 © Evangelische Brüder-Unität – [Herrnhuter Brüdergemeine](http://www.herrnhuter.de)
+
 Weitere Informationen finden Sie [hier](http://www.losungen.de).
