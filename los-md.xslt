@@ -23,7 +23,7 @@
   <xsl:template match="/FreeXml">
     <xsl:for-each select="Losungen">
     
-# <xsl:variable name="dayNo" select="number(substring-after(substring-after(substring-before(Datum,'T'),'-'),'-'))" />
+#### <xsl:variable name="dayNo" select="number(substring-after(substring-after(substring-before(Datum,'T'),'-'),'-'))" />
 <xsl:variable name="monthNo" select="number(substring-before(substring-after(Datum,'-'),'-'))" />
 <xsl:value-of select="Wtag"/>, <xsl:value-of select="$dayNo"/>. <xsl:value-of select="$vMonthNames[$monthNo]/full"/>
     <xsl:text>&#xa;&#xa;</xsl:text>

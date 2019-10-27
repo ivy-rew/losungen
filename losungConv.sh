@@ -38,7 +38,10 @@ function toEpub()
   export EPUB="$BOOK_DIR/losungen-$YEAR.epub"
   MD="$BOOK_DIR/losungen-$YEAR.md"
   xsltproc los-md.xslt "$XML" > $MD
-  pandoc -f markdown -o "$EPUB" copyright.md $MD
+  pandoc --epub-chapter-level=4\
+   -f markdown -o "$EPUB"\
+  copyright.md $MD
+  
   echo "CREATED ebook $EPUB"
 }
 
