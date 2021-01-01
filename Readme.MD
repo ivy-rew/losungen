@@ -4,7 +4,12 @@ Die Losung des Tages als EBook. Im Format EPUB oder MOBI (kindle). Perfekt für 
 
 ![previewKindle](doc/img/losung2019-kindle.jpg)
 
+
 ## Dev
+
+![CI](https://github.com/ivy-rew/losungen/workflows/CI/badge.svg)
+
+
 Die Scripte können mit einem Debian basierten Betriebssystem (z.B. Ubuntu 18.04) ausgeführt werden.
 
 ```./build.sh``` ...startet die Erzeugung des EPUB books.
