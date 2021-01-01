@@ -54,7 +54,7 @@ function toMobi()
     echo "skipping MOBI creation!"
     echo "dep missing: requiring Calibre (ebook-convert) to create MOBI format for Kindle."
     echo "https://calibre-ebook.com/download_linux"
-    return -1
+    return 0
   fi
   MOBI="$BOOK_DIR/losungen-$YEAR.mobi"
   ebook-convert "$EPUB" "$MOBI"
