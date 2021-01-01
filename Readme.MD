@@ -15,6 +15,6 @@ Die Scripte können mit einem Debian basierten Betriebssystem (z.B. Ubuntu 18.04
 ```./build.sh``` ...startet die Erzeugung des EPUB books.
 
 ## Copyright
-© Evangelische Brüder-Unität – [Herrnhuter Brüdergemeine](http://www.herrnhuter.de)
+© Evangelische Brüder-Unität – [Herrnhuter Brüdergemeinde](http://www.herrnhuter.de)
 
 Weitere Informationen finden Sie [hier](http://www.losungen.de).
