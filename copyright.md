@@ -1,6 +1,5 @@
-% Die Losungen
+% Die Losungen 2021
 % der Herrnhuter Brüdergemeinde
-% 2019
 
 © Evangelische Brüder-Unität – [Herrnhuter Brüdergemeine](http://www.herrnhuter.de)
 
