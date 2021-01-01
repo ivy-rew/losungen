@@ -1,9 +1,8 @@
 #!/bin/bash
 
-YEAR=2019
-if [ ! -z "$1" ]
-  then
-    YEAR=$1
+YEAR=$(date +%Y)
+if [ ! -z "$1" ]; then
+  YEAR=$1
 fi
 
 DIR="build"
@@ -31,16 +30,19 @@ function toEpub()
     sudo apt install -y pandoc
   fi
 
-
   rm -rf "$BOOK_DIR"
   mkdir "$BOOK_DIR"
 
   export EPUB="$BOOK_DIR/losungen-$YEAR.epub"
   MD="$BOOK_DIR/losungen-$YEAR.md"
   xsltproc los-md.xslt "$XML" > $MD
+  
+  RIGHTS="build/copyright.md"
+  sed -e "s|__YEAR__|${YEAR}|g" copyright.md > "${RIGHTS}"
+
   pandoc --epub-chapter-level=4\
    -f markdown -o "$EPUB"\
-  copyright.md $MD
+  "$RIGHTS" $MD
   
   echo "CREATED ebook $EPUB"
 }

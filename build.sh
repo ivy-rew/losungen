@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source losungConv.sh 2021
+source losungConv.sh
 
 downloadLosungXml
 toEpub
